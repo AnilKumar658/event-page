@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORKSHOP</title>
+    <style>
+        form 
+        {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 35px;
+            max-width: 400px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            font-size: 18px;
+        }
+        .title
+        {
+            font-size: 32px;
+        }
+        form label 
+        {
+            display: block;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        form input[type="date"],
+        form input[type="text"],
+        form input[type="time"],
+        form input[type="int"]
+        {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .submit-button  
+         {
+            background-color: #3498db;
+        }
+        .reset-button
+        {
+            background-color: #34db66;
+        }
+        .submit-button ,.reset-button{
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 0 10px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="/workshop" method="post">
+        <p class="title">Workshop</p>
+        <label>Enter Event Name:</label>
+        <input type="text" name="ename"><br>
+        <label>Date Of Commencement:</label>
+        <input type="date" name="edate"><br>
+        <label>Venue Of Event:</label>
+        <input type="text" name="venue"><br>
+        <select name="year">
+            <option value="1">First</option>
+            <option value="2">Second</option>
+            <option value="3">Third</option>
+            <option value="4">Fourth</option>
+        </select><br>
+        
+        <input type="SUBMIT" class="submit-button">
+        <input type="RESET" class="reset-button">
+    </form>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Schedule</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        form {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        form label {
+            width: 48%;
+            margin-bottom: 10px;
+        }
+
+        form input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Program Schedule</h1>
+    </header>
+
+    <section>
+        <h2>Event Schedule</h2>
+
+        <form action="/programSchedule" method="post">
+            <label for="eventTimings">eventTimings:</label>
+            <input type="datetime-local" id="eventTimings" name="eventTimings" required>
+
+            <label for="participants">participants:</label>
+            <input type="text" id="participants" name="participants" required>
+
+            <label for="partcipantNames">partcipantNames:</label>
+            <input type="text" id="partcipantNames" name="partcipantNames" required>
+
+            <label for="specialGuest">specialGuest:</label>
+            <input type="text" id="specialGuest" name="specialGuest" required>
+
+            <label for="InvitationContent">InvitationContent:</label>
+            <textarea id="InvitationContent" name="InvitationContent" rows="4" required></textarea>
+
+            <button type="submit">Add Event</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Event Name</th>
+                    <th>Event Time</th>
+                    <th>Event Speaker</th>
+                    <th>Event Location</th>
+                    <th>Event Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Sample table data (replace with dynamic data) -->
+                <tr>
+                    <td>Opening Ceremony</td>
+                    <td>9:00 AM</td>
+                    <td>John Doe</td>
+                    <td>Main Hall</td>
+                    <td>Welcome and Introduction</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        &copy; 2023 Program Schedule
+    </footer>
+
+</body>
+
+</html>

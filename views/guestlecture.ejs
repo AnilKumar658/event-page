@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest Lecture</title>
+    <style>
+        form 
+        {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 35px;
+            max-width: 400px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            font-size: 18px;
+        }
+        .title
+        {
+            text-align: center;
+            font-size: 32px;
+        }
+        form label 
+        {
+            display: block;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        form input[type="date"],
+        form input[type="text"],
+        form input[type="time"],
+        form input[type=""]
+        {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .submit-button {
+            background-color: #3498db;
+        }
+        
+        .submit-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 0 10px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #select{
+                padding: 10px;
+                width:100%;
+        }
+    </style>
+</head>
+<body>
+    <p class="title">Guest Lecture</p>
+    <form>
+        <label>Enter Event Name:</label>
+        <input type="text"><br><br>
+        <label for="">Enter Event Date:</label>
+        <input type="date"><br><br>
+        <label for="">Enter Event Time:</label>
+        <input type="time"><br><br>
+        <label for="">Enter Event Venue:</label>
+        <input type="text"><br><br>
+        <label for="">Participents</label>
+        <select id="select">
+            <option name="1">First</option>
+            <option name="2">Second</option>
+            <option name="3">Third</option>
+            <option name="4">Fourth</option>
+        </select><br><br>
+        <label>Enter speaker name:</label>
+        <input type="text"><br><br>
+        <input type="SUBMIT" class="submit-button">
+    </form>
+</body>
+</html>

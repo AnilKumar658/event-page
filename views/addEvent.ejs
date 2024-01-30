@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Navigation</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4;
+}
+
+#nav {
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+}
+
+.nav-button {
+  margin-right: 10px;
+  cursor: pointer;
+  color: #fff;
+  padding: 8px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+}
+
+.nav-button:hover {
+  background-color: #555;
+}
+
+#content {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+  </style>
+</head>
+<body>
+  <div id="nav">
+    <div class="nav-button" onclick="loadContent('workshop')">workshop</div>
+    <div class="nav-button" onclick="loadContent('guestlecture')">guestlecture</div>
+    <div class="nav-button" onclick="loadContent('industrialtrip')">industrialtrip</div>
+  </div>
+
+  <div id="content">
+    <!-- Content will be dynamically loaded here -->
+  </div>
+
+  <script>
+   function loadContent(page) {
+  // Fetch the content from an HTML file
+  fetch(page)
+    .then(response => response.text())
+    .then(html => {
+      // Update the content div without refreshing the page
+      document.getElementById("content").innerHTML = html;
+    })
+    .catch(error => {
+      console.error('Error fetching content:', error);
+    });
+}
+
+  </script>
+
+</body>
+</html>

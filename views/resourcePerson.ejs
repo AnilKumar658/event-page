@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Person Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        form {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+        }
+
+        form label {
+            width: 48%;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        form input {
+            width: 30%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Resource Person Details</h1>
+    </header>
+
+    <section>
+        <form action="/resourcePerson" method="post">
+            <label for="guestName">Guest Name:</label>
+            <input type="text" id="guestName" name="guestName">
+
+            <label for="designation">Designation:</label>
+            <input type="text" id="designation" name="designation">
+
+            <label for="experience">Experience:</label>
+            <input type="text" id="experience" name="experience">
+
+            <label for="payableFee">Payable Fee:</label>
+            <input type="text" id="payableFee" name="payableFee">
+
+            <label for="transport">Transport:</label>
+            <input type="text" id="transport" name="transport">
+
+            <label for="chequeCopy">Copy of Cheque:</label>
+            <input type="file" id="chequeCopy" name="chequeCopy">
+
+            <input type="SUBMIT" class="submit-button">
+            <input type="RESET" class="reset-button">
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2023 Resource Person Details
+    </footer>
+
+</body>
+
+</html>

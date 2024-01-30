@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDUSTRIAL VISIT</title>
+    <style>
+        form 
+        {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 35px;
+            max-width: 400px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            font-size: 18px;
+        }
+        .title
+        {
+            font-size: 32px;
+        }
+        form label 
+        {
+            display: block;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        form input[type="date"],
+        form input[type="text"],
+        form input[type="time"],
+        form input[type="int"]
+        {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .submit-button  
+         {
+            background-color: #3498db;
+        }
+        .reset-button
+        {
+            background-color: #34db66;
+        }
+        .submit-button ,.reset-button{
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 0 10px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <p class="title">INDUSTRIAL VISIT</p>
+        <label for="">Visit Date:</label>
+        <input type="date"><br>
+        <label for="">Visit Venue:</label>
+        <input type="text"><br>
+        <label for="">Participents</label>
+        <select>
+            <option name="1">First</option>
+            <option name="2">Second</option>
+            <option name="3">Third</option>
+            <option name="4">Fourth</option>
+        </select><br>
+        <label>No. of Participants :</label>
+        <input type="int"><br>
+        <label>Required BUSES ?</label>
+        <input type="radio" name="req">YES
+        <input type="radio" name="req">NO<br>
+        <label>No. of Buses Required</label>
+        <input type="int"><br><br>
+        <input type="SUBMIT" class="submit-button">
+        <input type="RESET" class="reset-button">
+    </form>
+</body>
+</html>
